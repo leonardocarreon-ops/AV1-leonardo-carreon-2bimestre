@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário Simples</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 20px;
+        }
+
+        form {
+            border: 1px solid black;
+            padding: 10px;
+            width: 300px;
+        }
+
+        input, textarea {
+         width: 100%;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 5px;
+            background-color: gray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>Contato</h3>
+
+    <form>
+        Nome:<br>
+        <input type="text" name="nome">
+
+        Email:<br>
+        <input type="email" name="email">
+
+        Mensagem:<br>
+        <textarea rows="4"></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <br>
+
+    <a href="index.html">Voltar</a>
+
+</body>
+</html>

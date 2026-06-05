@@ -1,87 +1,142 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Me Adicione</title>
+    <meta charset="UTF-8">
+    <title>Meu Site</title>
+    <link rel="stylesheet" href="style.css" />
 
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #5865F2, #23272A);
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background-color: rgb(255, 255, 255);
 
-    .card {
-      background: rgba(0,0,0,0.4);
-      padding: 40px;
-      border-radius: 20px;
-      text-align: center;
-      width: 320px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.5);
-    }
+            display: flex;
+            flex-direction: column;
+            align-items: center;
 
-    h1 {
-      margin-bottom: 10px;
-    }
+            
+        }
 
-    p {
-      color: #ddd;
-      margin-bottom: 25px;
-    }
+        header {
+            margin-top: 30px;
+        }
 
-    .btn {
-      display: block;
-      text-decoration: none;
-      color: white;
-      padding: 15px;
-      margin: 10px 0;
-      border-radius: 12px;
-      font-size: 18px;
-      transition: 0.3s;
-    }
+        nav {
+            margin: 20px 0;
+        }
 
-    .game {
-      background: #00b894;
-    }
+        nav a {
+            margin: 5px;
+            padding: 10px;
+            text-decoration: none;
+            color: black;
+            border: 1px solid black;
+            display: inline-block;
+        }
 
-    .game:hover {
-      background: #00d1a0;
-      transform: scale(1.05);
-    }
+        .caixa {
+            background-color: rgb(110, 110, 129);
+            width: 300px;
+            padding: 20px;
+            border: 1px solid black;
+            color: black;
+        }
 
-    .discord {
-      background: #5865F2;
-    }
+        a {
+            display: block;
+            color: black;
+            text-decoration: none;
+            padding: 10px;
+            margin: 10px;
+        }
 
-    .discord:hover {
-      background: #6d78ff;
-      transform: scale(1.05);
-    }
-  </style>
+        .jogo {
+            border: 1px solid black;
+        }
+
+        .discord {
+            border: 1px solid black;
+        }
+
+        form {
+            border: 1px solid black;
+            padding: 10px;
+            width: 300px;
+            margin-top: 20px;
+            background-color: rgb(130, 132, 153);
+            color: rgb(255, 255, 255);
+        }
+
+        input, textarea {
+            width: 100%;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 5px;
+            background-color: rgb(18, 196, 71);
+            color: black;
+            border: 1px solid rgb(0, 0, 0);
+        }
+
+        hr {
+            width: 80%;
+            margin: 20px 0;
+            border: 1px solid black;
+        }
+    </style>
 </head>
+
 <body>
 
-  <div class="card">
-    <h1>🎮 Me Adicione</h1>
-    <p>Entre em contato comigo no jogo ou no Discord!</p>
+    <header>
+        <h1>MEU SITE</h1>
+    </header>
 
-    <!-- BOTÃO DO JOGO -->
-    <a class="btn game" href="SEU_LINK_DO_JOGO" target="_blank">
-      🎯 Me adicionar no jogo
-    </a>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="filmes.html">Filmes</a>
+        <a href="jogos.html">Jogos</a>
+        <a href="contato.html">Contato</a>
+        <a href="formulario.html">Formulário</a>
+    </nav>
 
-    <!-- BOTÃO DO DISCORD -->
-    <a class="btn discord" href="https://discord.gg/SEU_LINK" target="_blank">
-      💬 Meu Discord
-    </a>
-  </div>
+    <div class="caixa">
+        <h1>🎮 Me Adicione</h1>
+
+        <p>Entre em contato comigo no jogo ou no Discord!</p>
+
+        <a class="jogo" href="SEU_LINK_DO_JOGO">
+            🎯 Me adicionar no jogo
+        </a>
+
+        <a class="discord" href="https://discord.gg/SEU_LINK">
+            💬 Meu Discord
+        </a>
+    </div>
+
+    <hr>
+
+    <h3>Contato</h3>
+
+    <form>
+        Nome:<br>
+        <input type="text" name="nome">
+
+        Email:<br>
+        <input type="email" name="email">
+
+        Mensagem:<br>
+        <textarea rows="4"></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <br>
+
+    <a href="index.html">Voltar</a>
 
 </body>
 </html>
